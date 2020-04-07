@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+} 
+
+body {
+  margin: 0;
+  padding:0;
+  height: fit-content;
+}
+.top-wrapper {
+  background-image: url(images/home-pic.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  background-color: rgb(251, 174, 75, 0.6);
+  margin: 0px;
+  align-content: center;
+}
+.top-container {
+  width: 500px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  padding-top: 40px;
+  font-weight: bolder;
+}
+
+.top-container h1 {
+  margin: 20px;
+}
+
+.top-container p {
+  margin: 20px;  
+}
+@media (min-width: 40rem) {
+  .top-container {
+    font-size: 1.6rem;
+    font-weight: bolder;
+  }
+  
+}
+
+.product-class__items--container {
+  width: 100%;
+  padding: 30px;
+  height: fit-content;
+}
+.product-class__items {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  /* margin: 24px auto; */
+}
+.product-class__items--headers{
+  width: 100%;
+  background: #fbad49;
+  padding: 8px;
+  border-radius: 8px;
+}
+.product-class__items--header{
+  display: inline-block;
+  width: 90%;
+  padding-left: 24px;
+  font-weight: bold;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.product-class__item{
+  text-decoration: none;
+  width: 20%;
+  color: #05410369;
+  display: inline-block;
+  margin: 12px 24px;
+  text-align: center;
+  border: black 5px solid;
+  padding: 2px;
+}
+.product-class__item--img>img{
+  width: 100%;
+  height: 300px;
+} 
+#product-reveal.new-in__items{
+  float: left;
+}
+.mystyle {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  /* margin: 24px auto; */
+}
+.mystyle>img {
+  width: 100%;
+  height: 300px;
+}
+.product-class__items--button{
+  vertical-align: middle;
+  padding: 4px 8px;
+  color: black;
+  background: #fbad49;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.product-class__items--button:active,
+.product-class__items--button:hover {
+ background: black;
+ color: #fbad49;
+ font-weight: bold;
+ font-style: inherit;
+}
+.product-class__items--button:focus{
+  outline: none;
+}

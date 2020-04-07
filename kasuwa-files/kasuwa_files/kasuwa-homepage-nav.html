@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css\kasuwa-homepage-nav.css" />
+    <link rel="stylesheet" href="css\kasuwa-shared-styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Kasuwa main</title>
+  </head>
+
+  <body>
+    <div class="backdrop"></div>
+    <header class="main-header">
+      <div>
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a href="kasuwa-homepage-nav.html" class="main-header__brand">
+          Kasuwa
+        </a>
+      </div>
+      <div class="main-header-search">
+        <form class="main-header-search__input" action="action_page.php">
+          <input
+            type="text"
+            placeholder="Search by product, category..."
+            name="search"
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <div class="main-header__cart" action="">
+        <a href="#"><i id="cart" class="fa fa-shopping-cart fa-3x"></i></a>
+      </div>
+      <nav class="main-header-nav">
+        <ul class="main-header-nav__items">
+          <li class="main-header-nav__item">
+            <a href="packages/index.html">About us</a>
+          </li>
+          <li class="main-header-nav__item">
+            <a href="customers/index.html">Log in</a>
+          </li>
+          <li class="main-header-nav__item main-header-nav__item--cta">
+            <a href="kasuwa-registration-page-nav.html">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="">About us</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="">Log in</a>
+        </li>
+        <li class="mobile-nav__item mobile-nav__item--cta">
+          <a href="">Sign up</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="clear-float"></div>
+    <div class="nav-bar">
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Groceries
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Fruits
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Vegetables
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Oils
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Dairy
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Poultry
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Roots and Tubers
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Cereals
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Plantatation
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Inputs
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="nav-bar__dropdown">
+        <button class="nav-bar__dropdown--dropbtn">
+          Logistics
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="nav-bar__dropdown--content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="top-wrapper">
+        <div class="top-container">
+          <h1>Kasuwa.ng</h1>
+          <p>Nigeria's first agricultural digital market place</p>
+          <p>Click to Shop safe, with speed and comfort!</p>
+        </div>
+      </div>
+      <div class="clear-float"></div>
+      <section class="product-class__items--container">
+        <div class="product-class__items--headers">
+          <p class="product-class__items--header">Best deals</p>
+          <button id="see-more" class="product-class__items--button">
+            View more
+          </button>
+        </div>
+        <div class="product-class__items">
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/tsitem1.jpg" alt="Bunch of Berries" />
+              <!-- <img src="css\images\tsitem1.jpg" alt="Bunch of Berries" /> -->
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Berries</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/rec-1-maize-cob.jpg" alt="Cob of maize" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Maize</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/tsitem2-green-pepper.jpeg"
+                alt="A heap of Green pepper"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Green pepper</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/pexels-photo-basket of vegetables.jpeg"
+                alt="Basket of vegetables"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Vegetables</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <div href="" class="product-class__items" id="product-reveal"></div>
+        </div>
+      </section>
+      <section class="product-class__items--container">
+        <div class="product-class__items--headers">
+          <p class="product-class__items--header">Fruits</p>
+          <button id="see-more" class="product-class__items--button">
+            View more
+          </button>
+        </div>
+        <div class="product-class__items">
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/fruits-1.jpg" alt="Ball of Cabbage" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Cabbage</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/fruits-6.jpg" alt="Basket of Avocadoes" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Avocadoes</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/fruits-3.jpg" alt="Basket of carrots" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Carrots</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/fruits-7.jpg" alt="Bunch of lime" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Lime</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <div href="" class="product-class__items" id="product-reveal"></div>
+        </div>
+      </section>
+      <section class="product-class__items--container">
+        <div class="product-class__items--headers">
+          <p class="product-class__items--header">Groceries</p>
+          <button id="see-more" class="product-class__items--button">
+            View more
+          </button>
+        </div>
+        <div class="product-class__items">
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/groc-2-tomato-bowl.jpg"
+                alt="bowl of tomato"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Tomatoes</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/groc-5-veg-basket.jpg"
+                alt="basket of vegetables"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Vegetable basket</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/groc-4-vegetables-on-table.jpg"
+                alt="vegetables on table"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Veggy Combo</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/groc-3-olive-oil-in-a-bowl.jpg"
+                alt="olive oil in a bowl"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Berries</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <div href="" class="product-class__items" id="product-reveal"></div>
+        </div>
+      </section>
+      <section class="product-class__items--container">
+        <div class="product-class__items--headers">
+          <p class="product-class__items--header">Livestock</p>
+          <button id="see-more" class="product-class__items--button">
+            View more
+          </button>
+        </div>
+        <div class="product-class__items">
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/lst-4-goats.jpg" alt="Goat and kid" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Goats</h2>
+              <h4 class="product-class--label--price">from N6099</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/lst-3-swine-of-pigs.jpg"
+                alt="Swine of pigs"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Pigs</h2>
+              <h4 class="product-class--label--price">from N699</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/pexels-photo-sheep.jpeg"
+                alt="A flock of Sheep"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Sheep</h2>
+              <h4 class="product-class--label--price">from N8099</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/sm3.jpg" alt="A Cow" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Cattle</h2>
+              <h4 class="product-class--label--price">from N16699</h4>
+            </div>
+          </a>
+        </div>
+        <div href="" class="product-class__items" id="product-reveal"></div>
+      </section>
+      <section class="product-class__items--container">
+        <div class="product-class__items--headers">
+          <p class="product-class__items--header">Recent Views</p>
+          <button id="see-more" class="product-class__items--button">
+            View more
+          </button>
+        </div>
+        <div class="product-class__items">
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/tsitem3.jpg" alt="Balls of melon" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Melon</h2>
+              <h4 class="product-class--label--price">from N1099</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/rec-6.jpg" alt="A piece of fish" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Fish</h2>
+              <h4 class="product-class--label--price">from N299</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img
+                src="./css/images/grapes-2715711_1920.jpg"
+                alt="A cluster of grapes"
+              />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Grapes</h2>
+              <h4 class="product-class--label--price">from N8099</h4>
+            </div>
+          </a>
+          <a href="" class="product-class__item">
+            <div class="product-class__item--img">
+              <img src="./css/images/rec-3.jpg" alt="Field of wheat" />
+            </div>
+            <div class="product-class__item--label">
+              <h2 class="product-class--label--name">Wheat</h2>
+              <h4 class="product-class--label--price">from N9699</h4>
+            </div>
+          </a>
+        </div>
+        <div href="" class="product-class__items" id="product-reveal"></div>
+      </section>
+      <section class="description--container">
+        <div class="description--items">
+          <div class="description--item"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="clear-float"></div>
+        <div class="footer-wrapper1">
+          <div class="farms-list footer-list">
+            <ul>
+              <li>
+                <a href=""><h4>FARMING PARTNERS</h4></a>
+              </li>
+              <li><a href="">Tomato jos</a></li>
+              <li><a href="">Kereksuk</a></li>
+              <li><a href="">Maizube Farms</a></li>
+              <li><a href="">Sebore Farms</a></li>
+              <li><a href="">Nagari Integrated Dairy</a></li>
+              <li><a href="">Anu-Oluwa Farms</a></li>
+              <li><a href="">Dickem Farms</a></li>
+            </ul>
+          </div>
+          <div class="farms-list footer-list">
+            <ul>
+              <li>
+                <a href=""><h4>PAYMENT</h4></a>
+              </li>
+              <li><a href="">Kasuwa wallet</a></li>
+              <li><a href="">Mastercard</a></li>
+              <li><a href="">Outlet by ALAT</a></li>
+              <li><a href="">Paystack</a></li>
+              <li><a href="">Interswitch</a></li>
+            </ul>
+          </div>
+          <div class="farms-list footer-list">
+            <ul>
+              <li>
+                <a href=""><h4>MORE INFO</h4></a>
+              </li>
+              <li><a href="">Site Map</a></li>
+              <li><a href="">Track My Order</a></li>
+              <li><a href="">Authentic items Policy</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h3>GET INFO</h3>
+            <p>Don't be left out on the latest and best deals</p>
+            <form class="newsletter-box" action="POST">
+              <input
+                type="text"
+                placeholder="enter your email to receive info on-the-go.."
+                name="search"
+              />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+        <div class="clear-float"></div>
+        <div class="footer-wrapper2">
+          <div class="footer-links">
+            <a href="">About Us</a>
+            <a href="">Website Terms of Use</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Consultancy</a>
+            <a href="">Latest Research</a>
+            <a href="">Sustainable Agriculture</a>
+            <a href="">Biowaste Recycling</a>
+            <a href="">SDGs</a>
+            <a href="">News</a>
+            <a id="no-border" href="">Service Level Agreement</a>
+          </div>
+          <div class="find-us">
+            <h4>FIND US EVERYWHERE</h4>
+            <i class="fa fa-facebook-f fa-2x"></i>
+            <i class="fa fa-twitter fa-2x"></i>
+            <i class="fa fa-instagram fa-2x"></i>
+            <i class="fa fa-whatsapp fa-2x"></i>
+            <i class="fa fa-google fa-2x"></i>
+          </div>
+          <div class="copyright">
+            <p>
+              Copyright<sup><i class="fa fa-copyright"></i></sup> 2019
+              Kasuwa.ng. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="kasuwa-homepage-products.js"></script>
+      <script src="sharedScript.js"></script>
+    </footer>
+  </body>
+</html>

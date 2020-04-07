@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* min-height: 2000px; */
+}
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.main-header {
+  background: black;
+  width: 100%;
+  padding: 20px;
+  float: left;
+  z-index: 50;
+  position: fixed;
+}
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 80px 0 0;
+}
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  margin: 0.6rem 0;
+}
+.main-header__brand {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0 24px;
+  text-shadow: 3px 2px #5ad413;
+  vertical-align: middle;
+}
+.main-header-search {
+  display: inline-block;
+  margin: 0;
+}
+.main-header-search__input input[type="text"] {
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+  width: 400px;
+  vertical-align: middle;
+}
+/* Style the submit button */
+.main-header-search button {
+  background: grey;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  height: 39px;
+  width: 40px;
+  vertical-align: middle;
+}
+.main-header-search button:hover {
+  background: #fbad49;
+}
+.main-header__cart a {
+  border: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  display: inline-block;
+  width: 10%;
+}
+.main-header-nav {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  z-index: 50;
+  position: fixed;
+}
+.main-header-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-header-nav__item,
+.mobile-nav__item {
+  display: inline-block;
+  margin: 0 16px;
+}
+.main-header-nav__item a,
+.mobile-nav__item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 3px 0;
+  font-size: 16px;
+}
+.main-header-nav__item a:hover,
+.main-header-nav__item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+.main-header-nav__item--cta a,
+.mobile-nav__item--cta a {
+  color: black;
+  background: #fbad49;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-header-nav__item--cta a:hover,
+.main-header-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
+  color: black;
+  background: white;
+  border: none;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
+/* Navbar container */
+.nav-bar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+/* Links inside the navbar */
+.nav-bar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* The dropdown container */
+.nav-bar__dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* Dropdown button */
+.nav-bar__dropdown .nav-bar__dropdown--dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+.nav-bar a:hover,
+.nav-bar__dropdown:hover .nav-bar__dropdown--dropbtn {
+  background-color: #fbad49;
+  color: black;
+  font-weight: bold;
+}
+/* Dropdown content (hidden by default) */
+.nav-bar__dropdown--content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.nav-bar__dropdown--content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.nav-bar__dropdown--content a:hover {
+  background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.nav-bar__dropdown:hover .nav-bar__dropdown--content {
+  display: block;
+}
+
+footer {
+  height: 400px;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 13.2px;
+}
+footer a:hover {
+  color: #fbad49;
+}
+.farms-list {
+  width: 20%;
+  float: left;
+}
+.farms-list li {
+  display: block;
+  list-style: none;
+  padding: 4px;
+}
+.footer-wrapper1 {
+  border-bottom: solid 2px white;
+  overflow: auto;
+  padding-bottom: 20px;
+  margin: 0 auto 20px auto;
+}
+.newsletter {
+  float: right;
+  width: 40%;
+  font-size: 13px;
+}
+.newsletter form {
+  margin: auto;
+  width: 100%;
+}
+form.newsletter-box input[type="text"] {
+  padding: 10px;
+  font-size: 13px;
+  border: none;
+  background: #f1f1f1;
+  margin: 5px 0px 25px 0px;
+  width: 350px;
+}
+form.newsletter-box input[type="submit"] {
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid grey;
+  background: #fbad49;
+  margin: 0;
+  width: 80px;
+  cursor: pointer;
+}
+form.newsletter-box input[type="submit"]:hover {
+  background: #ededed;
+}
+.footer-wrapper2 {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  height: 30px;
+}
+.footer-wrapper2 a {
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid white;
+  padding: 1px 12px;
+  height: 10px;
+  text-align: center;
+}
+.footer-links {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.find-us {
+  margin: 20px auto;
+  height: 100%;
+  font-size: 120%;
+  vertical-align: middle;
+}
+.find-us i {
+  padding: 10px 20px 0 0;
+}
+.copyright {
+  float: right;
+  font-size: 15px;
+  height: 100%;
+  padding: 16px 0px;
+  position: relative;
+  bottom: 40px;
+  width: 30%;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+#no-border {
+  border: none !important;
+}
+.clear-float {
+  clear: both !important;
+}
